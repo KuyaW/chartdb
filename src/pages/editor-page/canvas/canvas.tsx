@@ -52,6 +52,8 @@ import {
     AlertTriangle,
     Highlighter,
     EyeOff,
+    PanelLeftClose,
+    PanelLeftOpen,
 } from 'lucide-react';
 import { Button } from '@/components/button/button';
 import { useLayout } from '@/hooks/use-layout';
@@ -303,7 +305,7 @@ export const Canvas: React.FC<CanvasProps> = ({ initialTables }) => {
         highlightedCustomType,
         highlightCustomTypeId,
     } = useChartDB();
-    const { showSidePanel } = useLayout();
+    const { showSidePanel, isSidePanelShowed, toggleSidePanel } = useLayout();
     const { effectiveTheme } = useTheme();
     const { scrollAction, showDBViews, showMiniMapOnCanvas } = useLocalConfig();
     const { isMd: isDesktop } = useBreakpoint('md');
@@ -1771,6 +1773,31 @@ export const Canvas: React.FC<CanvasProps> = ({ initialTables }) => {
                                     ) : null}
                                 </>
                             ) : null}
+
+                            <Tooltip>
+                                <TooltipTrigger asChild>
+                                    <span>
+                                        <Button
+                                            variant="secondary"
+                                            className="size-8 p-1 shadow-none"
+                                            onClick={toggleSidePanel}
+                                        >
+                                            {isSidePanelShowed ? (
+                                                <PanelLeftClose className="size-4" />
+                                            ) : (
+                                                <PanelLeftOpen className="size-4" />
+                                            )}
+                                        </Button>
+                                    </span>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    {t(
+                                        isSidePanelShowed
+                                            ? 'menu.view.hide_sidebar'
+                                            : 'menu.view.show_sidebar'
+                                    )}
+                                </TooltipContent>
+                            </Tooltip>
 
                             <div
                                 className={`transition-opacity duration-300 ease-in-out ${
