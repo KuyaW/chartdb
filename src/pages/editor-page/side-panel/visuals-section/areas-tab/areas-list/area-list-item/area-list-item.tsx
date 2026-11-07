@@ -149,7 +149,7 @@ export const AreaListItem = React.forwardRef<HTMLDivElement, AreaListItemProps>(
 
         return (
             <div
-                className="w-full rounded-md border border-border hover:bg-accent/5"
+                className="w-full rounded-2xl border border-white/60 bg-card shadow-clay-sm transition-shadow hover:shadow-clay dark:border-white/10"
                 ref={combinedRef}
                 style={{
                     ...style,

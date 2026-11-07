@@ -79,7 +79,7 @@ export const NotesList: React.FC<NotesListProps> = ({ notes }) => {
     }, [openedNoteInSidebar, handleScrollToNote]);
 
     return (
-        <div className="flex w-full flex-col gap-1">
+        <div className="flex w-full flex-col gap-2">
             <DndContext
                 sensors={sensors}
                 collisionDetection={closestCenter}

@@ -146,7 +146,7 @@ export const TableListItemContent: React.FC<TableListItemContentProps> = ({
 
     return (
         <div
-            className="flex flex-col gap-1 rounded-b-md border-l-[6px] px-1"
+            className="flex flex-col gap-1 rounded-b-2xl border-l-[6px] px-1"
             style={{
                 borderColor: color,
             }}

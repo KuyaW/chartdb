@@ -91,7 +91,7 @@ export const TableList: React.FC<TableListProps> = ({ tables }) => {
         <Accordion
             type="single"
             collapsible
-            className="flex w-full flex-col gap-1"
+            className="flex w-full flex-col gap-2"
             value={openedTableInSidebar}
             onValueChange={openTableFromSidebar}
             onAnimationEnd={handleScrollToTable}

@@ -79,7 +79,7 @@ export const AreaList: React.FC<AreaListProps> = ({ areas }) => {
     }, [openedAreaInSidebar, handleScrollToArea]);
 
     return (
-        <div className="flex w-full flex-col gap-1">
+        <div className="flex w-full flex-col gap-2">
             <DndContext
                 sensors={sensors}
                 collisionDetection={closestCenter}

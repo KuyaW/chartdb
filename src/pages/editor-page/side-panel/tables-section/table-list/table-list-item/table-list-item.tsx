@@ -27,15 +27,15 @@ export const TableListItem = React.forwardRef<
     };
 
     return (
-        <AccordionItem value={table.id} className="border-none" ref={ref}>
+        <AccordionItem value={table.id} className="group border-none" ref={ref}>
             <div
-                className="w-full rounded-md border-b"
+                className="w-full overflow-hidden rounded-2xl bg-card shadow-clay-sm transition-shadow hover:shadow-clay group-data-[state=open]:shadow-clay"
                 ref={setNodeRef}
                 style={style}
                 {...attributes}
             >
                 <AccordionTrigger
-                    className="w-full rounded-md border-l-[6px] px-2 py-0 hover:bg-accent hover:no-underline data-[state=open]:rounded-b-none"
+                    className="w-full rounded-t-2xl border-l-[6px] px-2 py-0 hover:bg-accent/40 hover:no-underline data-[state=open]:rounded-b-none"
                     style={{
                         borderColor: table.color,
                     }}
