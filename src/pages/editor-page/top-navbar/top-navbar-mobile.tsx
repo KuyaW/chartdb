@@ -5,6 +5,7 @@ import { Menu } from './menu/menu';
 import { Button } from '@/components/button/button';
 import { useSidebar } from '@/components/sidebar/use-sidebar';
 import { MenuIcon } from 'lucide-react';
+import { ThemeToggle } from './theme-toggle';
 
 export interface TopNavbarMobileProps {}
 
@@ -35,6 +36,7 @@ export const TopNavbarMobile: React.FC<TopNavbarMobileProps> = () => {
                             />
                         </a>
                     </div>
+                    <ThemeToggle />
                 </div>
                 <Menu />
             </div>
