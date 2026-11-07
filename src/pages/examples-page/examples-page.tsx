@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
-import ChartDBLogo from '@/assets/logo-light.png';
-import ChartDBDarkLogo from '@/assets/logo-dark.png';
+import BryDBLogo from '@/assets/logo-light.png';
+import BryDBDarkLogo from '@/assets/logo-dark.png';
 import type { Example } from './examples-data/examples-data';
 import { examples } from './examples-data/examples-data';
 import { ExampleCard } from './example-card';
@@ -51,7 +51,7 @@ const ExamplesPageComponent: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>ChartDB - Example Database Diagrams & Schemas</title>
+                <title>BryDB - Example Database Diagrams & Schemas</title>
             </Helmet>
             <section className="flex min-h-screen w-screen flex-col bg-transparent">
                 <nav className="flex h-14 flex-row items-center justify-between border-b border-border/60 bg-card/40 px-4 backdrop-blur-sm">
@@ -65,10 +65,10 @@ const ExamplesPageComponent: React.FC = () => {
                                 <img
                                     src={
                                         effectiveTheme === 'light'
-                                            ? ChartDBLogo
-                                            : ChartDBDarkLogo
+                                            ? BryDBLogo
+                                            : BryDBDarkLogo
                                     }
-                                    alt="chartDB"
+                                    alt="BryDB"
                                     className="h-4 max-w-fit"
                                 />
                             </a>
@@ -83,7 +83,7 @@ const ExamplesPageComponent: React.FC = () => {
                     </h1>
                     <h2 className="mt-2 max-w-2xl font-primary text-base text-muted-foreground">
                         A collection of examples to help you get started with
-                        ChartDB.
+                        BryDB.
                     </h2>
                     <h2 className="mt-1 text-base font-semibold">
                         Click on one 😀

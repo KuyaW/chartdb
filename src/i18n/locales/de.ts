@@ -471,7 +471,7 @@ export const de: LanguageTranslation = {
         star_us_dialog: {
             title: 'Hilf uns, uns zu verbessern!',
             description:
-                'Gefällt Ihnen ChartDB? Lassen Sie es uns wissen und helfen Sie uns, ChartDB zu verbessern!',
+                'Gefällt Ihnen BryDB? Lassen Sie es uns wissen und helfen Sie uns, BryDB zu verbessern!',
             close: 'Nicht jetzt',
             confirm: 'Natürlich!',
         },

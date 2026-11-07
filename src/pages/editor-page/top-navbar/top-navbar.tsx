@@ -38,7 +38,7 @@ export const TopNavbar: React.FC<TopNavbarProps> = () => {
                                     ? ChartDBLogo
                                     : ChartDBDarkLogo
                             }
-                            alt="chartDB"
+                            alt="BryDB"
                             className="h-4 max-w-fit"
                         />
                     </a>

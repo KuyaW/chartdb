@@ -42,7 +42,7 @@ export const TopNavbarMobile: React.FC<TopNavbarMobileProps> = () => {
                         >
                             <img
                                 src={ChartDBLogo}
-                                alt="chartDB"
+                                alt="BryDB"
                                 className="h-4 max-w-fit"
                             />
                         </a>

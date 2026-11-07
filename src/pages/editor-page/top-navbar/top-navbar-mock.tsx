@@ -21,7 +21,7 @@ export const TopNavbarMock: React.FC = () => {
                                     ? ChartDBLogo
                                     : ChartDBDarkLogo
                             }
-                            alt="chartDB"
+                            alt="BryDB"
                             className="h-4 max-w-fit"
                         />
                     </a>

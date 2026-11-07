@@ -188,7 +188,7 @@ export const EditorSidebar: React.FC<EditorSidebarProps> = () => {
                                     ? ChartDBLogo
                                     : ChartDBDarkLogo
                             }
-                            alt="chartDB"
+                            alt="BryDB"
                             className="h-4 max-w-fit"
                         />
                     </a>

@@ -41,13 +41,13 @@ export const TemplatesPageHelmet: React.FC<TemplatesPageHelmetProps> = ({
             ) : null}
 
             {tag ? (
-                <title>{`${tag} database schema diagram templates | ChartDB`}</title>
+                <title>{`${tag} database schema diagram templates | BryDB`}</title>
             ) : isFeatured ? (
                 <title>
-                    Featured database schema diagram templates | ChartDB
+                    Featured database schema diagram templates | BryDB
                 </title>
             ) : (
-                <title>Database schema diagram templates | ChartDB</title>
+                <title>Database schema diagram templates | BryDB</title>
             )}
 
             {tag ? (
@@ -65,17 +65,17 @@ export const TemplatesPageHelmet: React.FC<TemplatesPageHelmetProps> = ({
             {tag ? (
                 <meta
                     property="og:title"
-                    content={`${tag} database schema diagram templates | ChartDB`}
+                    content={`${tag} database schema diagram templates | BryDB`}
                 />
             ) : isFeatured ? (
                 <meta
                     property="og:title"
-                    content="Featured database schema diagram templates | ChartDB"
+                    content="Featured database schema diagram templates | BryDB"
                 />
             ) : (
                 <meta
                     property="og:title"
-                    content="Database schema diagram templates | ChartDB"
+                    content="Database schema diagram templates | BryDB"
                 />
             )}
 
@@ -106,17 +106,17 @@ export const TemplatesPageHelmet: React.FC<TemplatesPageHelmetProps> = ({
             )}
             <meta property="og:image" content={`${HOST_URL}/chartdb.png`} />
             <meta property="og:type" content="website" />
-            <meta property="og:site_name" content="ChartDB" />
+            <meta property="og:site_name" content="BryDB" />
 
             {tag ? (
                 <meta
                     name="twitter:title"
-                    content={`${tag} database schema diagram templates | ChartDB`}
+                    content={`${tag} database schema diagram templates | BryDB`}
                 />
             ) : (
                 <meta
                     name="twitter:title"
-                    content="Database schema diagram templates | ChartDB"
+                    content="Database schema diagram templates | BryDB"
                 />
             )}
 
@@ -134,8 +134,6 @@ export const TemplatesPageHelmet: React.FC<TemplatesPageHelmetProps> = ({
 
             <meta name="twitter:image" content={`${HOST_URL}/chartdb.png`} />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content="@ChartDB_io" />
-            <meta name="twitter:creator" content="@ChartDB_io" />
         </Helmet>
     );
 };
