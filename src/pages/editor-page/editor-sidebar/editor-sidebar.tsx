@@ -202,7 +202,7 @@ export const EditorSidebar: React.FC<EditorSidebarProps> = () => {
                             {diagramItems.map((item) => (
                                 <SidebarMenuItem key={item.title}>
                                     <SidebarMenuButton
-                                        className="justify-center space-y-0.5 !px-0 hover:bg-gray-200 data-[active=true]:bg-gray-100 data-[active=true]:text-pink-600 data-[active=true]:hover:bg-pink-100 dark:hover:bg-gray-800 dark:data-[active=true]:bg-gray-900 dark:data-[active=true]:text-pink-400 dark:data-[active=true]:hover:bg-pink-950"
+                                        className="justify-center space-y-0.5 bg-card !px-0 text-muted-foreground shadow-clay-sm hover:-translate-y-px hover:bg-card hover:text-foreground hover:shadow-clay data-[active=true]:bg-card data-[active=true]:text-primary data-[active=true]:shadow-clay-inset data-[active=true]:hover:bg-card"
                                         isActive={item.active}
                                         asChild
                                     >
@@ -227,7 +227,7 @@ export const EditorSidebar: React.FC<EditorSidebarProps> = () => {
                             {baseItems.map((item) => (
                                 <SidebarMenuItem key={item.title}>
                                     <SidebarMenuButton
-                                        className="justify-center space-y-0.5 !px-0 hover:bg-gray-200 data-[active=true]:bg-gray-100 data-[active=true]:text-pink-600 data-[active=true]:hover:bg-pink-100 dark:hover:bg-gray-800 dark:data-[active=true]:bg-gray-900 dark:data-[active=true]:text-pink-400 dark:data-[active=true]:hover:bg-pink-950"
+                                        className="justify-center space-y-0.5 bg-card !px-0 text-muted-foreground shadow-clay-sm hover:-translate-y-px hover:bg-card hover:text-foreground hover:shadow-clay data-[active=true]:bg-card data-[active=true]:text-primary data-[active=true]:shadow-clay-inset data-[active=true]:hover:bg-card"
                                         isActive={item.active}
                                         asChild
                                     >
@@ -261,7 +261,7 @@ export const EditorSidebar: React.FC<EditorSidebarProps> = () => {
                                 </span>
                             )}
                             <SidebarMenuButton
-                                className="justify-center space-y-0.5 !px-0 hover:bg-gray-200 data-[active=true]:bg-gray-100 data-[active=true]:text-pink-600 data-[active=true]:hover:bg-pink-100 dark:hover:bg-gray-800 dark:data-[active=true]:bg-gray-900 dark:data-[active=true]:text-pink-400 dark:data-[active=true]:hover:bg-pink-950"
+                                className="justify-center space-y-0.5 bg-card !px-0 text-muted-foreground shadow-clay-sm hover:-translate-y-px hover:bg-card hover:text-foreground hover:shadow-clay data-[active=true]:bg-card data-[active=true]:text-primary data-[active=true]:shadow-clay-inset data-[active=true]:hover:bg-card"
                                 isActive={item.active}
                                 asChild
                             >
