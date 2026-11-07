@@ -140,14 +140,6 @@ const TemplatePageComponent: React.FC = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="flex flex-1 justify-end">
-                        <iframe
-                            src={`https://ghbtns.com/github-btn.html?user=chartdb&repo=chartdb&type=star&size=large&text=false`}
-                            width="40"
-                            height="30"
-                            title="GitHub"
-                        ></iframe>
-                    </div>
                 </nav>
                 {!template ? (
                     <Spinner size={'large'} className="mt-20 text-pink-600" />
