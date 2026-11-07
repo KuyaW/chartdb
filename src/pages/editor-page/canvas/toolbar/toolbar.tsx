@@ -89,7 +89,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({ readonly }) => {
 
     return (
         <div className="px-1">
-            <Card className="h-[44px] bg-secondary p-0 shadow-none">
+            <Card className="h-[44px] bg-card/95 p-0 shadow-clay">
                 <CardContent className="flex h-full flex-row items-center p-1">
                     <Tooltip>
                         <TooltipTrigger asChild>
@@ -153,7 +153,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({ readonly }) => {
                     <Button
                         variant="ghost"
                         onClick={resetZoom}
-                        className="w-[60px] p-2 hover:bg-primary-foreground"
+                        className="w-[60px] rounded-xl p-2 hover:bg-accent"
                     >
                         {zoom}
                     </Button>

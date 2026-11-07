@@ -121,7 +121,7 @@ const TemplatePageComponent: React.FC = () => {
                 )}
             </Helmet>
 
-            <section className="flex h-screen w-screen flex-col bg-background">
+            <section className="flex min-h-screen w-screen flex-col bg-transparent">
                 <nav className="flex h-12 shrink-0 flex-row items-center justify-between border-b px-4">
                     <div className="flex flex-1 justify-start gap-x-3">
                         <div className="flex items-center font-primary">

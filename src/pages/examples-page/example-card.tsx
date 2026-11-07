@@ -33,13 +33,13 @@ export const ExampleCard: React.FC<ExampleCardProps> = ({
     return (
         <div
             onClick={utilizeExample}
-            className="flex h-96 w-full cursor-pointer flex-col rounded-xl border-2 border-slate-500 bg-slate-50 shadow-sm transition duration-300 ease-in-out hover:scale-[102%] hover:border-pink-600 dark:border-slate-700 dark:bg-slate-950"
+            className="flex h-96 w-full cursor-pointer flex-col rounded-[1.75rem] border-2 border-white/70 bg-card shadow-clay transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-pink-400 hover:shadow-clay-lg dark:border-white/10"
         >
             <div
-                className="h-4 rounded-t-[10px]"
+                className="h-4 rounded-t-[1.6rem]"
                 style={{ backgroundColor: color.current }}
             ></div>
-            <div className="flex h-12 items-center justify-between bg-slate-200 px-2 dark:bg-slate-900">
+            <div className="flex h-12 items-center justify-between bg-muted/80 px-3">
                 <div className="flex items-center gap-2">
                     <Tooltip>
                         <TooltipTrigger className="mr-1">
@@ -61,7 +61,7 @@ export const ExampleCard: React.FC<ExampleCardProps> = ({
                             }
                         </TooltipContent>
                     </Tooltip>
-                    <Label className="cursor-pointer text-base font-bold">
+                    <Label className="cursor-pointer text-base font-extrabold tracking-tight">
                         {example.name}
                     </Label>
                 </div>
@@ -89,7 +89,9 @@ export const ExampleCard: React.FC<ExampleCardProps> = ({
                     className="w-fit object-cover"
                 />
             </div>
-            <div className="flex p-2 text-base">{example.description}</div>
+            <div className="flex p-3 text-base text-muted-foreground">
+                {example.description}
+            </div>
         </div>
     );
 };

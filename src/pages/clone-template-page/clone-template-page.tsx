@@ -51,7 +51,7 @@ export const CloneTemplateComponent: React.FC = () => {
     }, [template, navigate, cloneTemplate]);
 
     return (
-        <section className="flex w-screen flex-col bg-background">
+        <section className="flex min-h-screen w-screen flex-col bg-transparent">
             <Spinner size={'large'} className="mt-20 text-pink-600" />
         </section>
     );

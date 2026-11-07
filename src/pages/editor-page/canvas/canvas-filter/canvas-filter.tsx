@@ -278,7 +278,7 @@ export const CanvasFilter: React.FC<CanvasFilterProps> = ({ onClose }) => {
 
     return (
         <div
-            className={`absolute right-2 top-2 z-10 flex flex-col rounded-lg border bg-background/85 shadow-lg backdrop-blur-sm transition-all duration-300 md:right-4 md:top-4 ${
+            className={`absolute right-2 top-2 z-10 flex flex-col rounded-2xl border border-white/70 bg-card/90 shadow-clay backdrop-blur-sm transition-all duration-300 dark:border-white/10 md:right-4 md:top-4 ${
                 isFilterVisible
                     ? 'translate-x-0 opacity-100'
                     : 'translate-x-full opacity-0'

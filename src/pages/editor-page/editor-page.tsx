@@ -81,7 +81,7 @@ const EditorPageComponent: React.FC = () => {
                 </title>
             </Helmet>
             <section
-                className={`bg-background ${isDesktop ? 'h-screen w-screen' : 'h-dvh w-dvw'} flex select-none flex-col overflow-x-hidden`}
+                className={`bg-transparent ${isDesktop ? 'h-screen w-screen' : 'h-dvh w-dvw'} flex select-none flex-col overflow-x-hidden`}
             >
                 <Suspense
                     fallback={

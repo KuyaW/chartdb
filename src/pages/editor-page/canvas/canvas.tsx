@@ -127,9 +127,7 @@ const HIGHLIGHTED_EDGE_Z_INDEX = 1;
 const DEFAULT_EDGE_Z_INDEX = 0;
 
 export type EdgeType =
-    | RelationshipEdgeType
-    | DependencyEdgeType
-    | TempFloatingEdgeType;
+    RelationshipEdgeType | DependencyEdgeType | TempFloatingEdgeType;
 
 export type NodeType =
     | TableNodeType
@@ -1878,11 +1876,12 @@ export const Canvas: React.FC<CanvasProps> = ({ initialTables }) => {
                         variant={BackgroundVariant.Dots}
                         gap={16}
                         size={1}
+                        color="hsl(var(--border))"
                     />
                     {/* Empty state when all tables are hidden by filter */}
                     {allTablesHiddenByFilter && (
                         <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
-                            <div className="pointer-events-auto flex items-center gap-3 rounded-lg border bg-background/90 px-4 py-3 shadow-sm backdrop-blur-sm">
+                            <div className="pointer-events-auto flex items-center gap-3 rounded-2xl border border-white/70 bg-card/90 px-4 py-3 shadow-clay backdrop-blur-sm dark:border-white/10">
                                 <EyeOff className="size-5 text-muted-foreground" />
                                 <span className="text-sm text-muted-foreground">
                                     {t('canvas.all_tables_hidden')}

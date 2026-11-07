@@ -414,7 +414,7 @@ export const RelationshipEdge: React.FC<EdgeProps<RelationshipEdgeType>> =
                         >
                             <button
                                 onClick={handleIndicatorClick}
-                                className="relative flex size-6 items-center justify-center rounded-full border-2 border-pink-600 bg-background shadow-lg transition-all hover:scale-110 hover:bg-pink-50"
+                                className="relative flex size-6 items-center justify-center rounded-full border-2 border-pink-500 bg-card shadow-clay-sm transition-all hover:scale-110 hover:bg-pink-50"
                                 title="Edit relationship"
                                 style={{ zIndex: 10 }}
                             >

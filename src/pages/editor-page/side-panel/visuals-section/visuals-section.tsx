@@ -30,7 +30,7 @@ export const VisualsSection: React.FC<VisualsSectionProps> = () => {
                 className="flex flex-1 flex-col overflow-hidden"
             >
                 <div className="px-2 pt-2">
-                    <TabsList className="grid h-auto w-full grid-cols-2 gap-1 rounded-xl border bg-background p-1">
+                    <TabsList className="grid h-auto w-full grid-cols-2 gap-1 rounded-2xl border border-white/70 bg-card/70 p-1 dark:border-white/10">
                         <TabsTrigger
                             value="areas"
                             className="gap-1.5 rounded-lg px-3 py-1 text-sm font-medium transition-all data-[state=active]:bg-sky-600 data-[state=active]:text-white data-[state=inactive]:text-muted-foreground data-[state=active]:shadow-sm data-[state=inactive]:hover:bg-muted/50 data-[state=inactive]:hover:text-foreground dark:data-[state=active]:bg-sky-500"

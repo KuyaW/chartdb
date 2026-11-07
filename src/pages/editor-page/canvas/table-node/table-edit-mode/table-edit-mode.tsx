@@ -241,7 +241,7 @@ export const TableEditMode: React.FC<TableEditModeProps> = React.memo(
                                 placeholder={
                                     defaultSchemaName || 'Select schema'
                                 }
-                                className="h-6 min-h-6 w-20 shrink-0 rounded-sm border-slate-600 bg-background py-0 pl-2 pr-0.5 text-sm"
+                                className="h-6 min-h-6 w-20 shrink-0 rounded-lg border-white/70 bg-card py-0 pl-2 pr-0.5 text-sm dark:border-white/10"
                                 popoverClassName="w-[200px]"
                                 commandOnMouseDown={(e) => e.stopPropagation()}
                                 commandOnClick={(e) => e.stopPropagation()}
@@ -268,7 +268,7 @@ export const TableEditMode: React.FC<TableEditModeProps> = React.memo(
                                     setNewSchemaName(e.target.value)
                                 }
                                 placeholder={`Enter schema name${defaultSchemaName ? ` (e.g. ${defaultSchemaName})` : ''}`}
-                                className="h-6 w-28 shrink-0 rounded-sm border-slate-600 bg-background text-sm"
+                                className="h-6 w-28 shrink-0 rounded-lg border-white/70 bg-card text-sm dark:border-white/10"
                                 onKeyDown={(e) => {
                                     if (e.key === 'Enter') {
                                         handleCreateNewSchema();
@@ -282,7 +282,7 @@ export const TableEditMode: React.FC<TableEditModeProps> = React.memo(
                         )}
                         <Input
                             ref={inputRef}
-                            className="h-6 flex-1 rounded-sm border-slate-600 bg-background text-sm"
+                            className="h-6 flex-1 rounded-lg border-white/70 bg-card text-sm dark:border-white/10"
                             placeholder="Table name"
                             value={tableName}
                             onChange={(e) =>

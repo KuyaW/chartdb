@@ -16,21 +16,21 @@ export interface ListMenuProps extends React.HTMLAttributes<HTMLDivElement> {
 export const ListMenu = React.forwardRef<HTMLDivElement, ListMenuProps>(
     ({ className, items }, ref) => {
         return (
-            <div className={cn('flex flex-col gap-0.5', className)} ref={ref}>
+            <div className={cn('flex flex-col gap-1', className)} ref={ref}>
                 {items.map((item) => (
                     <Link
                         key={item.href}
                         className={cn(
-                            'flex h-7 w-full text-pink-600 dark:text-white items-center gap-1 rounded-sm p-1 text-sm transition-colors hover:bg-pink-100 dark:hover:bg-pink-900 hover:no-underline',
+                            'flex h-8 w-full items-center gap-2 rounded-xl px-2.5 text-sm transition-all hover:no-underline',
                             item.selected
-                                ? 'bg-pink-100 dark:bg-pink-900 font-semibold'
-                                : 'text-muted-foreground hover:bg-pink-50 dark:hover:bg-pink-950 hover:text-pink-600 dark:hover:text-white'
+                                ? 'bg-card font-bold text-primary shadow-clay-sm'
+                                : 'text-muted-foreground hover:bg-card/70 hover:text-foreground'
                         )}
                         href={item.href}
                     >
                         {item.icon ? (
                             <item.icon
-                                size="13"
+                                size="14"
                                 strokeWidth={item.selected ? 2.4 : 2}
                             />
                         ) : null}

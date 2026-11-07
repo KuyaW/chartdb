@@ -53,8 +53,8 @@ const ExamplesPageComponent: React.FC = () => {
             <Helmet>
                 <title>ChartDB - Example Database Diagrams & Schemas</title>
             </Helmet>
-            <section className="flex w-screen flex-col bg-background">
-                <nav className="flex h-12 flex-row items-center justify-between border-b px-4">
+            <section className="flex min-h-screen w-screen flex-col bg-transparent">
+                <nav className="flex h-14 flex-row items-center justify-between border-b border-border/60 bg-card/40 px-4 backdrop-blur-sm">
                     <div className="flex flex-1 justify-start gap-x-3">
                         <div className="flex items-center font-primary">
                             <a
@@ -78,10 +78,10 @@ const ExamplesPageComponent: React.FC = () => {
                     <div className="hidden flex-1 justify-end sm:flex"></div>
                 </nav>
                 <div className="flex flex-col px-3 pt-3 text-center md:px-28 md:text-left">
-                    <h1 className="font-primary text-2xl font-bold">
+                    <h1 className="font-primary text-3xl font-extrabold tracking-tight">
                         Examples
                     </h1>
-                    <h2 className="mt-1 font-primary text-base text-muted-foreground">
+                    <h2 className="mt-2 max-w-2xl font-primary text-base text-muted-foreground">
                         A collection of examples to help you get started with
                         ChartDB.
                     </h2>

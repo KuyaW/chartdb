@@ -12,10 +12,7 @@ export const ToolbarButton = React.forwardRef<
         <Button
             ref={ref}
             variant="ghost"
-            className={cn(
-                'w-[36px] p-2 hover:bg-primary-foreground',
-                className
-            )}
+            className={cn('w-[36px] rounded-xl p-2 hover:bg-accent', className)}
             {...rest}
         />
     );

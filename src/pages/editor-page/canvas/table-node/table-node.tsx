@@ -347,11 +347,11 @@ export const TableNode: React.FC<NodeProps<TableNodeType>> = React.memo(
         const tableClassName = useMemo(
             () =>
                 cn(
-                    'flex w-full flex-col border-2 bg-slate-50 dark:bg-slate-950 rounded-lg shadow-sm transition-transform duration-300',
+                    'flex w-full flex-col rounded-[1.25rem] border-2 border-white/70 bg-card shadow-clay transition-transform duration-300 dark:border-white/10',
                     table.isView ? 'border-dashed' : '',
                     selected || isTarget || isPartOfCreatingRelationship
-                        ? 'border-pink-600'
-                        : 'border-slate-500 dark:border-slate-700',
+                        ? 'border-pink-500'
+                        : 'border-white/70 dark:border-white/10',
                     isOverlapping
                         ? 'ring-2 ring-offset-slate-50 dark:ring-offset-slate-900 ring-blue-500 ring-offset-2'
                         : '',
@@ -504,10 +504,10 @@ export const TableNode: React.FC<NodeProps<TableNodeType>> = React.memo(
                         }
                     />
                     <div
-                        className="h-2 rounded-t-[6px]"
+                        className="h-2 rounded-t-[1.15rem]"
                         style={{ backgroundColor: tableColor }}
                     ></div>
-                    <div className="group flex h-9 items-center justify-between bg-slate-200 px-2 dark:bg-slate-900">
+                    <div className="group flex h-9 items-center justify-between rounded-t-[1.1rem] bg-muted px-2">
                         <div className="flex min-w-0 flex-1 items-center gap-2">
                             {isDiffNewTable ? (
                                 <Tooltip>

@@ -21,9 +21,9 @@ export const TemplateCard: React.FC<TemplateCardProps> = ({ template }) => {
     const { effectiveTheme } = useTheme();
     return (
         <a href={`/templates/${template.slug}`}>
-            <div className="flex h-80 w-full cursor-pointer flex-col rounded-lg border-2 border-slate-500 bg-slate-50 shadow-sm transition duration-300 ease-in-out hover:scale-[102%] hover:border-pink-600 dark:border-slate-700 dark:bg-slate-950">
+            <div className="flex h-80 w-full cursor-pointer flex-col rounded-[1.75rem] border-2 border-white/70 bg-card shadow-clay transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-pink-400 hover:shadow-clay-lg dark:border-white/10">
                 <div
-                    className="h-2 rounded-t-[6px]"
+                    className="h-2 rounded-t-[1.6rem]"
                     style={{ backgroundColor: randomColor() }}
                 ></div>
                 <div className="overflow-hidden p-1">
@@ -34,12 +34,12 @@ export const TemplateCard: React.FC<TemplateCardProps> = ({ template }) => {
                                 : template.image
                         }
                         alt={template.name}
-                        className="size-full rounded object-fill"
+                        className="size-full rounded-xl object-fill"
                     />
                 </div>
                 <div className="mt-2 flex items-center justify-between px-2">
                     <div className="flex items-center gap-1">
-                        <h3 className="cursor-pointer text-base font-semibold">
+                        <h3 className="cursor-pointer text-base font-extrabold tracking-tight">
                             {template.name}
                         </h3>
                     </div>
@@ -66,7 +66,7 @@ export const TemplateCard: React.FC<TemplateCardProps> = ({ template }) => {
                         </Tooltip>
                     </div>
                 </div>
-                <div className="flex p-2 text-sm">
+                <div className="flex p-2 text-sm text-muted-foreground">
                     {template.shortDescription}
                 </div>
                 <div className="flex flex-wrap gap-1 p-2">
