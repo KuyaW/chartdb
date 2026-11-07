@@ -1662,7 +1662,7 @@ export const Canvas: React.FC<CanvasProps> = ({ initialTables }) => {
     return (
         <CanvasContextMenu>
             <div
-                className="relative flex h-full"
+                className="canvas-paper relative flex h-full"
                 id="canvas"
                 ref={containerRef}
                 onMouseMove={handleMouseMove}
@@ -1874,9 +1874,10 @@ export const Canvas: React.FC<CanvasProps> = ({ initialTables }) => {
                     )}
                     <Background
                         variant={BackgroundVariant.Dots}
-                        gap={16}
-                        size={1}
-                        color="hsl(var(--border))"
+                        gap={20}
+                        size={1.2}
+                        color="hsl(var(--canvas-dot))"
+                        bgColor="transparent"
                     />
                     {/* Empty state when all tables are hidden by filter */}
                     {allTablesHiddenByFilter && (

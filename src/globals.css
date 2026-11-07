@@ -40,6 +40,10 @@
         --sidebar-border: 250 35% 89%;
         --sidebar-ring: 258 72% 62%;
 
+        /* Dot-grid paper for the diagram canvas */
+        --canvas-paper: 255 55% 99%;
+        --canvas-dot: 252 22% 70%;
+
         /* Ambient gradient behind the whole app */
         --app-gradient:
             radial-gradient(
@@ -121,6 +125,9 @@
         --sidebar-accent-foreground: 248 30% 94%;
         --sidebar-border: 248 20% 24%;
         --sidebar-ring: 258 80% 74%;
+
+        --canvas-paper: 248 26% 14%;
+        --canvas-dot: 248 18% 38%;
 
         --app-gradient:
             radial-gradient(
@@ -216,6 +223,28 @@
 
     .text-editable {
         @apply dark:group-hover:bg-slate-900 group-hover:bg-slate-100 group-hover:ring-[0.5px] rounded-md cursor-pointer;
+    }
+}
+
+@layer components {
+    /* Paper surface behind React Flow's dot grid */
+    .canvas-paper {
+        background-color: hsl(var(--canvas-paper));
+        background-image:
+            radial-gradient(
+                hsl(var(--canvas-dot) / 0.16) 0.5px,
+                transparent 0.5px
+            ),
+            radial-gradient(
+                hsl(var(--canvas-dot) / 0.1) 0.5px,
+                transparent 0.5px
+            );
+        background-position:
+            0 0,
+            3px 5px;
+        background-size:
+            7px 7px,
+            11px 11px;
     }
 }
 
